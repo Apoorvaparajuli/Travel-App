@@ -1,97 +1,52 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Travel App 🌍
+A multi-language travel application built with React Native CLI for CSE3MAD Assessment 3 at La Trobe University.
 
-# Getting Started
+## About This Project
+This app helps users discover and book travel destinations across Nepal and India.
+It was built using React Native CLI (not Expo) with TypeScript.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## New Features (Assessment 3)
+### 🌐 Translation System
+- Switches the entire app between English, Nepali and Hindi
+- Uses the **i18next** and **react-i18next** NPM packages
+- All 4 screens are fully translated
 
-## Step 1: Start Metro
+### 💾 Language Memory
+- Remembers the user's chosen language between sessions
+- Uses **@react-native-async-storage/async-storage**
+- Language is restored automatically when the app reopens
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Screens
+| Screen | Description |
+|--------|-------------|
+| 🏠 Home | Search destinations + language switcher |
+| 🔭 Explore | Filter by mountains, beaches, cities |
+| 📋 Booking | Select travelers, nights, confirm booking |
+| 👤 Profile | User profile + language settings |
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## Tech Stack
+- React Native CLI 0.85.3
+- TypeScript
+- i18next + react-i18next
+- @react-native-async-storage
+- react-native-safe-area-context
 
-```sh
-# Using npm
-npm start
+## Installation
+```bash
+# Install dependencies
+npm install
 
-# OR using Yarn
-yarn start
+# Run on Android
+npx react-native run-android
 ```
 
-## Step 2: Build and run your app
+## Third-Party Libraries Acknowledged
+| Library | Licence | Link |
+|---------|---------|------|
+| i18next | MIT | [github.com/i18next/i18next](https://github.com/i18next/i18next) |
+| react-i18next | MIT | [github.com/i18next/react-i18next](https://github.com/i18next/react-i18next) |
+| @react-native-async-storage | MIT | [github.com/react-native-async-storage](https://github.com/react-native-async-storage/async-storage) |
+| react-native-safe-area-context | MIT | [github.com/th3rdwave/react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context) |
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Author
+**Apoorva** — CSE3MAD — La Trobe University — 2025
